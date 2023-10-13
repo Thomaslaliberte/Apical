@@ -376,3 +376,11 @@ a{
     padding: 12px 20px;
     border-bottom:1px solid rgba(0,0,0,.125) ;
 }
+
+#contenu404{
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    width: 300px;
+    padding-left: 400px;
+}

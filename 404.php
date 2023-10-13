@@ -20,15 +20,14 @@
     <body>
         
         
-        <div id="content">
-            <div id="contenuPrincipal">
+        <div class="content" style="min-height:250px;">
+            <div id="contenu404">
                 <hr class="hr_404">
                 <p>La page demander n'existe pas</p>
                 <hr class="hr_404">
             </div>
         </div>
         
-        <hr style="color='white'"> 
     </body>   
     
     <?php get_footer(); ?>

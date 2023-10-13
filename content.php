@@ -3,6 +3,7 @@
         if(get_post_type() === 'post'):?>
             <div class="contenupost">
             <h3 class="formation"><?php echo($num .". ") ?><?php the_title(); 
+            
             ?></h3>
             </div>
             <?php
