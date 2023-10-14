@@ -1,6 +1,7 @@
 <?php $num = 1;
     if ( have_posts() ) : while ( have_posts() ) : the_post();
         if(get_post_type() === 'post'):?>
+            <div class="tout">
             <div class="contenupost">
             <h3 class="formation"><?php echo($num .". ") ?><?php the_title(); 
             
@@ -29,6 +30,7 @@
                 <?php
             }
             $num = $num +1;
+            ?></div><?php
         endif;
         endwhile; ?>
         <div style="border: 1px solid rgba(0,0,0,.125); border-bottom: 0!important"></div>

@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	var boutonfermerlogin = document.getElementById("boutonfermerlogin");
 	var commentaires = document.getElementsByClassName("commentaires");
 	var boutontoutdevelopper = document.getElementById("boutondeveloppement");
-	var formation = document.getElementsByClassName("formation");
+	var formation = document.getElementsByClassName("contenupost");
 
 	boutonrecherche.addEventListener("click", ouvrirrecherche);
 	boutonfermerrecherche.addEventListener("click", fermerrecherche);
@@ -53,7 +53,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	function cacher(){
-		toutcacher();
+	function cacher(element){
+		enfant = element.currentTarget.parentElement.querySelector(".commentaires");
+		if(enfant.style.display == "block"){
+			enfant.style.display = "none"}	
+		else{
+			 enfant.style.display = "block"}
 	}
 });
