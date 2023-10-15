@@ -14,7 +14,7 @@
 
             if($commentaires){
                 $num2 = 1;?>
-                <div class="commentaires" style="display:block">
+                <div class="commentaires" style="display:none">
                     <?php
                     foreach( $commentaires as $commentaire){
                         $commentaire = $commentaire->comment_content
