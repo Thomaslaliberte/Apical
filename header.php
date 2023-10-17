@@ -14,10 +14,10 @@
     </div>
     <div id="bas_header">
         <?php
-    $pages = get_pages();
-    foreach($pages as $page) {
-        $link = 1;
-        echo('<a class="navpage" href="' . get_page_link( $page->ID ) . '">' . $page->post_title .'</a>');
+        $pages = get_pages();
+        foreach($pages as $page) {
+            $link = 1;
+            echo('<a class="navpage" href="' . get_page_link( $page->ID ) . '">' . $page->post_title .'</a>');
         }?>
     </div>
     <div id="fenetrerecherche" style="display:none;">
@@ -26,14 +26,14 @@
     </div>
     <div id="fenetrelogin" style="display:none;">
         <div class="boutonfermer" id="boutonfermerlogin">x</div>
-        <?php 
-        $args = array(
-            'redirect'        => 'http://localhost:8888/wp-admin/',
-            'label_username'    =>'*Usager:  ',
-            'label_password'    =>'*Mot de passe:',
-            'label_remember'    =>'rester connecté',
-            'label_log_in' =>'Soumettre'
-        );
+            <?php 
+            $args = array(
+                'redirect'        => 'http://localhost:8888/wp-admin/',
+                'label_username'    =>'*Usager:  ',
+                'label_password'    =>'*Mot de passe:',
+                'label_remember'    =>'rester connecté',
+             'label_log_in' =>'Soumettre'
+            );
         wp_login_form($args);?>
          
     </div>

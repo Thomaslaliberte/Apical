@@ -17,21 +17,21 @@
         <?php
         global $wp;
 
-         if(home_url( $_SERVER['REQUEST_URI'] ) === esc_url( home_url( '/' ) )): ?>
-        <div class="content">
-            <div id="nom">
-                <hr class="hrnom">
-                <div id="divnom">Formation PUB020 : WordPress, 2023</div>
-                <hr class="hrnom" id="hrnombas">
-            </div>
-            <div id="boutondeveloppement">
-                <div class="btn">
-                    Tout développer
+        if(home_url( $_SERVER['REQUEST_URI'] ) === esc_url( home_url( '/' ) )): ?>
+            <div class="content">
+                <div id="nom">
+                    <hr class="hrnom">
+                    <div id="divnom">Formation PUB020 : WordPress, 2023</div>
+                    <hr class="hrnom" id="hrnombas">
                 </div>
-            </div>
+                <div id="boutondeveloppement">
+                    <div class="btn">
+                        Tout développer
+                    </div>
+                </div>
             
-            <div id="contenuPrincipal">
-            <?php get_template_part('content')?>
+                <div id="contenuPrincipal">
+                <?php get_template_part('content')?>
             </div>
         </div>
         <?php

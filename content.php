@@ -32,8 +32,8 @@
             $num = $num +1;
             ?></div><?php
         endif;
-        endwhile; ?>
-        <div style="border: 1px solid rgba(0,0,0,.125); border-bottom: 0!important"></div>
+    endwhile; ?>
+    <div id="divbas"></div>
 
     <?php else: ?>
 
